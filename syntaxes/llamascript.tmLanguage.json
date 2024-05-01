@@ -1,0 +1,18 @@
+{
+    "name": "llamascript",
+    "patterns": [
+        {
+            "name": "keyword.control.llamascript",
+            "match": "\\b(USE|PROMPT|SYSTEM|CHAT|IGNORE)\\b"
+        },
+        {
+            "name": "keyword.control.llamascript.stream",
+            "match": "\\b(STREAM)\\b"
+        },
+        {
+            "name": "keyword.control.llamascript.input",
+            "match": "\\b(INPUT)\\b"
+        }
+    ],
+    "scopeName": "source.llamascript"
+}

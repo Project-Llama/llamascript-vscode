@@ -1,0 +1,27 @@
+{
+    "name": "Llamascript",
+    "type": "light",
+    "colors": {
+        "editor.foreground": "#FFA500"
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control.llamascript",
+            "settings": {
+                "foreground": "#93caed"
+            }
+        },
+        {
+            "scope": "keyword.control.llamascript.stream",
+            "settings": {
+                "foreground": "#f47174"
+            }
+        },
+        {
+            "scope": "keyword.control.llamascript.input",
+            "settings": {
+                "foreground": "#f47174"
+            }
+        }
+    ]
+}

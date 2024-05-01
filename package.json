@@ -1,0 +1,37 @@
+{
+  "name": "llamascript",
+  "displayName": "LlamaScript",
+  "description": "Language pack extension for llamascript",
+  "version": "0.0.1",
+  "publisher": "wolfthedev",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Language Packs"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+          "language": "llamascript",
+          "scopeName": "source.llamascript",
+          "path": "./syntaxes/llamascript.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+          "label": "Llamascript",
+          "uiTheme": "vs-dark",
+          "path": "./color-scheme.json"
+      },
+      {
+          "label": "Llamascript Light",
+          "uiTheme": "vs",
+          "path": "./color-scheme-light.json"
+      }
+  ]
+  },
+  "scripts": {
+    "update": "cd ../vscode && npm run update-localization-extension llamascript"
+  }
+}
