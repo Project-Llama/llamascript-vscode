@@ -1,0 +1,19 @@
+{
+    "name": "Llamascript",
+    "type": "dark",
+    "colors": {},
+    "tokenColors": [
+        {
+            "scope": ["keyword.control.llamascript", "keyword.control.llamascript.stream", "keyword.control.llamascript.input"],
+            "settings": {
+                "foreground": "#FF6B6B"
+            }
+        },
+        {
+            "scope": "*",
+            "settings": {
+                "foreground": "#add8e6"
+            }
+        }
+    ]
+}

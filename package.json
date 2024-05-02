@@ -2,8 +2,11 @@
   "name": "llamascript",
   "displayName": "LlamaScript",
   "description": "Language pack extension for llamascript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "wolfthedev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WolfTheDeveloper/llamascript-vscode"},
   "engines": {
     "vscode": "^1.88.0"
   },
@@ -20,14 +23,14 @@
     ],
     "themes": [
       {
-          "label": "Llamascript",
+          "label": "Llamascript Dark",
           "uiTheme": "vs-dark",
-          "path": "./color-scheme.json"
+          "path": "./themes/dark.json"
       },
       {
           "label": "Llamascript Light",
           "uiTheme": "vs",
-          "path": "./color-scheme-light.json"
+          "path": "./themes/light.json"
       }
   ]
   },
