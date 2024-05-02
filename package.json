@@ -2,37 +2,49 @@
   "name": "llamascript",
   "displayName": "LlamaScript",
   "description": "Language pack extension for llamascript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "wolfthedev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WolfTheDeveloper/llamascript-vscode"},
+    "url": "https://github.com/WolfTheDeveloper/llamascript-vscode"
+  },
   "engines": {
     "vscode": "^1.88.0"
   },
   "categories": [
     "Language Packs"
   ],
+  "activationEvents": [
+    "onLanguage:llamascript"
+  ],
+  "main": "./extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "llamascript",
+        "extensions": [".llama"],
+        "aliases": ["LlamaScript"]
+      }
+    ],
     "grammars": [
       {
-          "language": "llamascript",
-          "scopeName": "source.llamascript",
-          "path": "./syntaxes/llamascript.tmLanguage.json"
+        "language": "llamascript",
+        "scopeName": "source.llamascript",
+        "path": "./syntaxes/llamascript.tmLanguage.json"
       }
     ],
     "themes": [
       {
-          "label": "Llamascript Dark",
-          "uiTheme": "vs-dark",
-          "path": "./themes/dark.json"
+        "label": "Llamascript Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark.json"
       },
       {
-          "label": "Llamascript Light",
-          "uiTheme": "vs",
-          "path": "./themes/light.json"
+        "label": "Llamascript Light",
+        "uiTheme": "vs",
+        "path": "./themes/light.json"
       }
-  ]
+    ]
   },
   "scripts": {
     "update": "cd ../vscode && npm run update-localization-extension llamascript"
