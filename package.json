@@ -2,7 +2,7 @@
   "name": "llamascript",
   "displayName": "LlamaScript",
   "description": "Language pack extension for llamascript",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "wolfthedev",
   "repository": {
     "type": "git",

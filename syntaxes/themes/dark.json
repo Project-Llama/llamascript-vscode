@@ -4,9 +4,15 @@
     "colors": {},
     "tokenColors": [
         {
-            "scope": ["keyword.control.llamascript", "keyword.control.llamascript.stream", "keyword.control.llamascript.input"],
+            "scope": ["keyword.control.llamascript"],
             "settings": {
                 "foreground": "#FF6B6B"
+            }
+        },
+        {
+            "scope": ["keyword.control.llamascript.input", "keyword.control.llamascript.stream"],
+            "settings": {
+                "foreground": "#33C7FF"
             }
         },
         {
