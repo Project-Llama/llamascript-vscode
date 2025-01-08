@@ -2,11 +2,11 @@
   "name": "llamascript",
   "displayName": "LlamaScript",
   "description": "Language pack extension for llamascript",
-  "version": "0.0.4",
-  "publisher": "wolfthedev",
+  "version": "0.1.0",
+  "publisher": "zanderlewis",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WolfTheDeveloper/llamascript-vscode"
+    "url": "https://github.com/Project-Llama/llamascript-vscode"
   },
   "engines": {
     "vscode": "^1.88.0"
@@ -22,8 +22,12 @@
     "languages": [
       {
         "id": "llamascript",
-        "extensions": [".llama"],
-        "aliases": ["LlamaScript"]
+        "extensions": [
+          ".llama"
+        ],
+        "aliases": [
+          "LlamaScript"
+        ]
       }
     ],
     "grammars": [
@@ -31,18 +35,6 @@
         "language": "llamascript",
         "scopeName": "source.llamascript",
         "path": "./syntaxes/llamascript.tmLanguage.json"
-      }
-    ],
-    "themes": [
-      {
-        "label": "Llamascript Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark.json"
-      },
-      {
-        "label": "Llamascript Light",
-        "uiTheme": "vs",
-        "path": "./themes/light.json"
       }
     ]
   },

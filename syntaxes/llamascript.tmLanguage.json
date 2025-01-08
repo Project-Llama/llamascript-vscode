@@ -2,16 +2,33 @@
     "name": "llamascript",
     "patterns": [
         {
-            "name": "keyword.control.llamascript",
-            "match": "\\b(USE|PROMPT|SYSTEM|CHAT|IGNORE)\\b"
+            "name": "entity.name.function.llamascript",
+            "match": "\\b(save|use|chat|prompt|system)\\b"
         },
         {
-            "name": "keyword.control.llamascript.stream",
-            "match": "\\b(STREAM)\\b"
+            "name": "macro.llamascript.stream",
+            "match": "#\\[stream\\((true|false)\\)\\]"
         },
         {
-            "name": "keyword.control.llamascript.input",
-            "match": "\\b(INPUT)\\b"
+            "name": "macro.llamascript.input",
+            "match": "#\\[input\\((true|false)\\)\\]"
+        },
+        {
+            "name": "string.llamascript",
+            "match": "\"(?:\\.|[^\"\\n])*\""
+        },
+        {
+            "name": "constant.numeric.llamascript",
+            "match": "\\b\\d+(?:\\.\\d+)?\\b"
+        },
+        {
+            "name": "comment.line.llamascript",
+            "match": "//.*$"
+        },
+        {
+            "name": "comment.block.llamascript",
+            "begin": "/\\*",
+            "end": "\\*/"
         }
     ],
     "scopeName": "source.llamascript"

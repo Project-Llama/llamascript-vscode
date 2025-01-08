@@ -1,5 +1,5 @@
 function activate(context) {
-    console.log('');
-  }
-  
-  exports.activate = activate;
+  console.log('');
+}
+
+exports.activate = activate;
